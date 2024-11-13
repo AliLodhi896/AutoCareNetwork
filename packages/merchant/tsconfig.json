@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react-native",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["index.js", "app", "test", "storybook", "../shared/*"],
+  "paths": {
+    "@merchant/root/*": ["./packages/merchant/*"],
+    "@merchant/test/*": ["./packages/merchant/test/*"],
+    "@merchant/app/*": ["./packages/merchant/app/*"],
+    "@merchant/assets/*": ["./packages/merchant/assets/*"],
+    "@merchant/component/*": ["./packages/merchant/components/*"],
+    "@merchant/screens/*": ["./packages/merchant/app/screens/*"],
+  },
+}

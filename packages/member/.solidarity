@@ -1,0 +1,10 @@
+{
+  "requirements": [
+    {
+      "rule": "cli",
+      "binary": "",
+      "platform": [],
+      "ci": true
+    }
+  ]
+}

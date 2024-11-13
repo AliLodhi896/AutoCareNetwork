@@ -1,0 +1,5 @@
+Pods/*
+build/*
+WashubMember.xcworkspace/xcuserdata/*
+# need to specifically commit and push this file
+/WashubMember.xcodeproj/project.pbxproj

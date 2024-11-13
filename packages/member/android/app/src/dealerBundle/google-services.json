@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "1027072871027",
+    "project_id": "autocarenetworkwebsiteapi",
+    "storage_bucket": "autocarenetworkwebsiteapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881162078508:android:76e8ad7c2f7a4c07b4c489",
+        "android_client_info": {
+          "package_name": "com.washub.member"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881162078508-tu815e2d5m9697v6jblr7jivrqvnadm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.washub.member",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "881162078508-8kvfd4tht0hoh0ilgt0dfdmjq8tpub62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC-87Uycdcq4_n5buqkLhThnit7DMhtqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881162078508-8kvfd4tht0hoh0ilgt0dfdmjq8tpub62.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "881162078508-1m9bu347hor3o2f03t7q0ou4e3dq5j5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.autocarenetwork.dealerbundle",
+                "app_store_id": "1514056102"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881162078508:android:954d8a31a25d56e1b4c489",
+        "android_client_info": {
+          "package_name": "com.autocarenetwork.dealerbundle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881162078508-0k16vp1n2v79jgrnfqmn9evtbkelg944.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autocarenetwork.dealerbundle",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "881162078508-8kvfd4tht0hoh0ilgt0dfdmjq8tpub62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC-87Uycdcq4_n5buqkLhThnit7DMhtqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881162078508-8kvfd4tht0hoh0ilgt0dfdmjq8tpub62.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "881162078508-1m9bu347hor3o2f03t7q0ou4e3dq5j5d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.autocarenetwork.dealerbundle",
+                "app_store_id": "1514056102"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

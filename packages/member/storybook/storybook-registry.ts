@@ -1,0 +1,14 @@
+require("../../shared/components/text/text.story");
+require("../../shared/components/auto-image/auto-image.story");
+require("../../shared/components/button/button.story");
+require("../../shared/components/gradient-background/gradient-background.story");
+require("../../shared/components/icon/icon.story");
+require("../../shared/components/w-input/w-input.story");
+require("../../shared/components/w-form/w-form.story");
+require("../../shared/components/v-icon/v-icon.story");
+require("../../shared/components/circle-button/circle-button.story");
+require("../../shared/components/circle-action-button/circle-action-button.story");
+require("../../shared/components/l-input/l-input.story");
+require("../app/components/redeem-card/redeem-card.story");
+require("../../shared/components/checkbox/checkbox.story");
+require("../app/components/wallpaper/wallpaper.story");

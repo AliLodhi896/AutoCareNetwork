@@ -1,0 +1,35 @@
+# dependencies
+/node_modules
+/__tests__
+.pnp.js
+
+/android
+/fastlane
+/ios
+/patches
+/test
+/ignite
+/e2e
+/bin
+
+# misc
+.DS_Store
+*.ipa
+.ruby-version
+.solidarity
+/devices.text
+/Gemfile.lock
+/Gemfile
+
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo

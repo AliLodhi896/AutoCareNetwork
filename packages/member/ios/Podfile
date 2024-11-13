@@ -1,0 +1,97 @@
+# Resolve react_native_pods.rb with node to allow for hoisting
+require Pod::Executable.execute_command('node', ['-p',
+  'require.resolve(
+    "react-native/scripts/react_native_pods.rb",
+    {paths: [process.argv[1]]},
+  )', __dir__]).strip
+
+platform :ios, min_ios_version_supported 
+prepare_react_native_project!
+
+$RNFirebaseAsStaticFramework = true
+
+linkage = ENV['USE_FRAMEWORKS']
+
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
+def shared_pods
+
+  
+  config = use_native_modules!
+  
+  use_frameworks! :linkage => :static
+
+  # Pods for test_google_signin
+  # pod 'GoogleSignIn', '~> 6.1.0'
+  # pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
+  # pod 'GoogleUtilities', :modular_headers => true
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+  pod 'react-native-maps', :path => rn_maps_path
+
+  post_install do |installer|
+
+    # Fix for Xcode 12.5
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      end
+    end
+
+    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+
+    # Fix for Xcode 16.0
+    bitcode_strip_path = `xcrun --find bitcode_strip`.chomp
+
+    def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+      framework_path = File.join(Dir.pwd, framework_relative_path)
+      command = "#{bitcode_strip_path} #{framework_path} -r -o #{framework_path}"
+      puts "Stripping bitcode: #{command}"
+      system(command)
+    end
+  
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+      end
+  
+      if target.name == 'Intercom'
+        device_framework_path = 'Pods/Intercom/Intercom.xcframework/ios-arm64/Intercom.framework/Intercom'
+        simulator_framework_path = 'Pods/Intercom/Intercom.xcframework/ios-arm64_x86_64-simulator/Intercom.framework/Intercom'
+        
+        # Strip bitcode from both binaries
+        strip_bitcode_from_framework(bitcode_strip_path, device_framework_path)
+        strip_bitcode_from_framework(bitcode_strip_path, simulator_framework_path)
+      end
+    end
+  end
+end
+
+target 'WashubMember' do
+  shared_pods
+  #  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+  target 'Dealer Bundle' do 
+    inherit! :complete
+  end
+end
+
+
+
+  

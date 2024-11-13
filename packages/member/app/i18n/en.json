@@ -1,0 +1,393 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "saved": "Saved",
+    "favorite": "Favorite",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "daysAgo": "days ago",
+    "welcome": "Welcome",
+    "website": "Website",
+    "phone": "Phone",
+    "address": "Address",
+    "mile": "MILE",
+    "logout": "LOG OUT",
+    "unlink": "Unlink",
+    "text": "Text",
+    "email": "Email",
+    "call": "Call",
+    "welcomeBack": "Welcome Back",
+    "color": "Color",
+    "premiumService": "Premium Services",
+    "miles": "MILES",
+    "directions": "Directions",
+    "submit": "Submit",
+    "note": "Note",
+    "done": "Done",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success",
+    "available": "Available",
+    "wash": "Wash",
+    "washes": "Washes",
+    "error": "Error",
+    "goodMorning": "Good morning",
+    "goodAfternoon": "Good afternoon",
+    "goodEvening": "Good evening"
+  },
+  "errors": {
+    "invalidEmail": "Invalid email address."
+  },
+  "signupScreen": {
+    "registerMembership": "Register Membership",
+    "register": "REGISTER",
+    "appRegistrationCode": "App Registration Code",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "zipCode": "Zip Code",
+    "emailAdress": "Email Address",
+    "phoneNumber": "Phone Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "registrationHelp": "Registration Help",
+    "getHelp": "GET HELP",
+    "chatHelp": "Chat Help",
+    "getHelpDetail_0": "For help registering your membership,",
+    "getHelpDetail_1": "please call Washub",
+    "call_washub": "Call Washub",
+    "text_washub": "Text Washub",
+    "validations": {
+      "registrationCode": {
+        "required": "The registration code is required"
+      },
+      "firstName": {
+        "required": "The first name is required"
+      },
+      "lastName": {
+        "required": "The last name is required"
+      },
+      "zipCode": {
+        "required": "The zipcode field is required"
+      },
+      "emailAdress": {
+        "required": "The email is required",
+        "email": "This must be a valid email"
+      },
+      "phoneNumber": {
+        "required": "The phone number field is required",
+        "length": "Phone number must be 10 digits in length",
+        "validUsPhoneNumber": "Please enter a valid US phone number"
+      },
+      "password": {
+        "required": "The password field is required"
+      },
+      "confirmPassword": {
+        "required": "Please confirm your password",
+        "equal": "Passwords do not match!"
+      }
+    }
+  },
+  "errorScreen": {
+    "title": "Something went wrong!",
+    "friendlySubtitle": "The app has crash un expectedly",
+    "traceTitle": "Error from %{name} stack",
+    "reset": "RESET APP"
+  },
+  "storybook": {
+    "placeholder": "Placeholder",
+    "field": "Field"
+  },
+  "loginScreen": {
+    "login": "LOG IN",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "registerMyMembership": "REGISTER MY MEMBERSHIP",
+    "googleLogintext": "Alternatively, sign in with google",
+    "resetPassword": "Reset password",
+    "contactWashub": "Contact Washub",
+    "emailWashub": "Email Washub",
+    "supportMessage": "Washub Support Request"
+  },
+  "vehicleInfoScreen": {
+    "form": {
+      "vin": "Vin",
+      "vehicleYear": "Vehicle Year",
+      "vehicleMake": "Vehicle Make",
+      "vehicleModel": "Vehicle Model",
+      "vehicleColor": "Vehicle Color",
+      "licencePlateNumber": "Licence Plate Number",
+      "licencePlateState": "Licence Plate State"
+    },
+    "validations": {
+      "vin": {
+        "required": "Please Enter Vehicle Identification Number",
+        "length": "VIN number must be 17 digits"
+      },
+      "vehicleYear": {
+        "required": "Please Enter Vehicle Year",
+        "matches": "Only numbers are allowed"
+      },
+      "vehicleMake": {
+        "required": "Please Enter Vehicle Make"
+      },
+      "vehicleModel": {
+        "required": "Please Enter Vehicle Model"
+      },
+      "vehicleColor": {
+        "required": "Please Enter Vehicle Color"
+      },
+      "licencePlateNumber": {
+        "required": "Please Enter License Plate Number"
+      },
+      "licencePlateState": {
+        "required": "Please Select A State"
+      }
+    },
+    "vehicleRegistered": "Vehicle   Registered",
+    "membershipNumber": "Membership Number"
+  },
+  "profileScreen": {
+    "washAvailableToday": "WASH AVAILABLE TODAY?",
+    "plan": "Plan",
+    "expires": "Expires",
+    "whatDoesYourPlanInclude": "WHAT DOES YOUR PLAN INCLUDE",
+    "whatsIncluded": "What's included",
+    "whatsIncludedBdy0": "Washub members are entitled to full service car wash..l.",
+    "whatsIncludedBdy1": "Washub members are entitled to full service car wash..l.",
+    "whatsIncludedBdy2": "Washub members are entitled {'\n'} to full service car wash..l",
+    "whatsIncludedBdy3": "Washub members are entitled to full service car wash..l.",
+    "whatsIncludedBdy4": "Washub members are entitled to full service car wash..l.",
+    "otherPlanEntitlements": "OTHER PLAN ENTITLEMENTS",
+    "termsHtml0": "Washub members are entitled to full-service car washes. While what's included with a full-service wash may vary among different locations, your wash will always include at least the following",
+    "termsHtml1": "Exterior wash of your car",
+    "termsHtml2": "Vacuum of the inside",
+    "termsHtml3": "Wipe down of the dash and center console",
+    "termsHtml4": "Cleaning of the windows, inside and out",
+    "termsHtml5": "There are a small number of car washes that only offer exterior washes. Washub partnered with these locations for your convenience. Any location that offers full-service will provide a full-service wash Washub members.",
+    "termsHtml6": "The cost of any upgrade beyond a full-service wash is the member's responsibility. Tipping is up to the member.",
+    "washMessage": "There are no car wash cards linked to this account. Please contact Washub at (877) 365-WASH (9274) if you have any questions",
+    "whatDoMyPlanIncludes": "What does my plan include",
+    "noActiveCarWash": "There are no active car wash cards linked to this account"
+  },
+  "notificationsScreen": {
+    "notifications": "NOTIFICATIONS",
+    "allNotifications": "All notifications",
+    "savedForLater": "Saved for later",
+    "saveForLater": "Save for later"
+  },
+  "productsScreen": {
+    "scheduleServiceAppointment": "SCHEDULE SERVICE APPOINTMENT",
+    "contactNumber": "Contact Number",
+    "offServices": "{{percentage}}% OFF SERVICES",
+    "vin": "Vin",
+    "claim": "Claim",
+    "bookService": "Book Service",
+    "bookAService": "Book a service",
+    "serviceRequest": "Service request",
+    "bookServicePlaceholder": "Please add any relevant notes about your service request.",
+    "submitClaim": "Submit Claim",
+    "submitClaimPlaceholder": "Please enter in the issue you are experiencing. Details such as what and when your issue began are helpful.",
+    "submitAClaim": "Submit a claim",
+    "autoShield": "AUTO SHIELD",
+    "totalLossProtection": "Total lost protection for both new and used vehicles, up to $5000 towards the purchase of a new vehicle at any Titan motor group Dealershup. Good for 3 years from the date of purchase or lease.",
+    "submitClain": "Submit Clain",
+    "keyRemoteReplacement": "KEY / REMOTE REPLACEMENT",
+    "expirationDate": "Expiration Date",
+    "uptoXXXPerYear": "Up to {{amount}} per year",
+    "dealerInfo": "Dealer Info",
+    "noData": "You do not have any other 3rd party products associated with your account.\n\nPlease contact Washub if you have any questions.",
+    "simplifyYourExperience": "Simplify your owner experience by managing your vehicle's products right from your phone.{'\n\n'}DealerBundle allows you to notify all necessary parties needed to service your vehicle. Simply click \"Submit Claim\" or \"Book Service\" and await an email response for an appointment, parts, or services needed.",
+    "bookSeriveModalContent": "`Please confirm that you would like to {{description}} for {{name}}. Your information will be sent directly to your dealership.`",
+    "serviceBookVia": "Service booked via: {{BookServiceLink}}",
+    "claimFillVia": "Claim filed via: {{FileClaimLink}}",
+    "submissionSuccesfull": "Submission succesfull",
+    "sureToCancel": "Are you sure you want to cancel? Your {{actionName}} will NOT be submitted."
+  },
+  "redeemWashFavouritesScreen": {
+    "myFavourites": "My Favorites",
+    "noFavouritesAdded": "NO FAVORITES ADDED",
+    "addToYourFav": "Add to your favorites by finding\n locations on the home screen ",
+    "findLocation": "Find Location"
+  },
+  "redeemWashFindLocationOnMapScreen": {
+    "cityStateZip": "City / State or ZIP code",
+    "showList": "Show List"
+  },
+  "redeemWashFindLocationOnListScreen": {
+    "premiumServices": "PREMIUM SERVICES",
+    "showMap": "Show Map"
+  },
+  "settingsScreen": {
+    "settings": "SETTINGS",
+    "items": {
+      "pushNotifications": "Push Notifications",
+      "myMemberNumber": "My Member Number",
+      "linkNewMembershipCard": "Link New Membership Card",
+      "provideFeedback": "Provide Feedback",
+      "contactAutoCare": "Contact Washub",
+      "shareThisApp": "Share this app",
+      "deleteAccount": "Delete Account"
+    },
+    "debug": "DEBUG",
+    "production": "PRODUCTION",
+    "version": "Version {{version}} installed",
+    "enterMemberNumber": "Enter Member Number",
+    "deleteAccountQuestion": "Delete Account?",
+    "deleteAccountWarning1": "By deleting your account, you will no longer be able to access your car wash membership/vouchers.",
+    "deleteAccountWarning2": "To cancel a membership itself, you will need to contact the dealership which you received your membership from.",
+    "contactMessage": "Get to us either through phone, email or SMS if you have any complains, worries or suggestions.",
+    "shareAppMessage": "Hey, found this interesting app",
+    "shareAppTitle": "Share Washub to friends",
+    "shareAppDialogue": "Hey, found this interesting app"
+  },
+  "editProfileScreen": {
+    "editProfile": "Edit Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number"
+  },
+  "pushNotificationsScreen": {
+    "pushNotifications": "Push Notifications",
+    "dealerNotifications": "Dealer Notifications",
+    "receiveImportantUpdates": "Receive important updates from your dealer"
+  },
+  "memberNumberScreen": {
+    "memberNumber": "Member Number",
+    "unregisterMembership": "Unregister Membership?",
+    "unregisterMembershipWarning1": "By unregistering this membership, you will no longer be able to access the associated car wash membership and/or products page.",
+    "unregisterMembershipWarning2": "To cancel a membership itself, you will need to contact the dealership which you received your membership from."
+  },
+  "close": "Close",
+  "homeScreen": {
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "bookService": "Book Service",
+    "redeemWash": "Redeem Wash",
+    "yourProducts": "Your Products",
+    "yourProfile": "Your Profile",
+    "settings": "Settings",
+    "scheduleService": "Schedule Service",
+    "home": "Home",
+    "findLocation": "Find Location",
+    "myFavorites": "My favorites",
+    "rating": {
+      "rateApp": "Rate App",
+      "rateCashierExperience": "Rate Cashier Experience",
+      "ratewash": "Rate Wash",
+      "inputPlaceholder": "Enter Feedback",
+      "ratingMessageSubject": "Washub Feedback",
+      "ratingMessageBody0": "App Rating",
+      "ratingMessageBody1": "Cashier Rating",
+      "ratingMessageBody2": "Wash Rating",
+      "ratingMessageBody3": "Notes",
+      "ratingMessageBody4": "Card Code",
+      "ratingMessageBody5": "Station Name"
+    },
+    "lastRedemption": "Last Redemption",
+    "mileage": {
+      "initialMessage": "In order toredeem you wash. Please enter your current mileage below",
+      "enterMileage": "Enter Mileage",
+      "validMileage": "Please enter a valid mileage",
+      "messageSubject": "Washub Service Request",
+      "messageBody": "Service Request: Mileage: ",
+      "willBeContactedShortly": "A Washub representative will contact you shortly."
+    },
+    "vehicleInfo": "Vehicle Info",
+    "editProfile": "Edit Profile",
+    "redeemHistory": "Wash History"
+
+  },
+  "redeemLocationsScreen": {
+    "showMap": "Show Map",
+    "showList": "Show List",
+    "selectLocation": "Select a location to redeem wash",
+    "locationDisabledTitle": "Location Services Are Disabled",
+    "locationDisabled": "Location Services Are Disabled\n\nPlease turn location services ON for Washub (in your settings) or search manually by entering a City & State or ZIP Code to find a participating location.",
+    "noLocation": "No Locations Found",
+    "pleaseTurnLocation": "Please turn location services ON for Washub (in your settings) or search manually by entering a City & State or ZIP Code to find a participating location.",
+    "findLocation": "Finding Locations...",
+    "searchThisArea": "SEARCH THIS AREA",
+    "selfVal": "Self-Val",
+    "invalidZipcode": "The ZIP code entered is invalid.\nPlease enter a valid ZIP code.",
+    "unableToFoundLocation": "Unable to Find Location, Please Try again.",
+    "searchPlaceholder": "City / State or ZIP code"
+  },
+  "stationDetailScreen": {
+    "redeemMessageModal0": "Self Validation Reminder",
+    "redeemMessageModal1": "When redeeming at this car wash, your app will perform a Self-Validation. When you click the",
+    "redeemMessageModal2": "Redeem",
+    "redeemMessageModal3": "button, your screen will display a live car wash redemption, with a",
+    "redeemMessageModal4": "pulsing golden border and dynamic time & date to indicate its live status",
+    "redeemMessageModal5": "Please make sure to",
+    "redeemMessageModal6": "show the car wash attendant your screen",
+    "redeemMessageModal7": "so they can verify your car wash and/or additional services redemption.",
+    "clickWhenReadyToShow": "Only click OK once you are ready to show your phone to the attendant",
+    "confirmLocation": "Please Confirm Your Location",
+    "noPlanAttached": "You don't have any plan attached to your account",
+    "pressingWillRedeem": "Pressing OK will redeem one wash and deduct it from your plan.",
+    "serviceLevel": "Service Level"
+  },
+  "washCard": {
+    "cardCode": "Card Code",
+    "notActivePlan": "This Plan is No Longer Active",
+    "expires": "Expires",
+    "message": "Washub Network members are entitled to full-service car washes, which includes: exterior wash of your car, vacuum of the inside, wipe down of the dash and center console, and cleaning of the windows, inside and out."
+  },
+  "webScreen": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "zip": "ZIP",
+    "contractNumber": "Contract Number",
+    "expirationDate": "Expiration Date",
+    "copiableAccountInfo": "Copiable Account Info",
+    "copiableAccountVehicleInfo": "Copiable Account/Vehicle Info",
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "vin": "VIN",
+    "plate": "Plate",
+    "copyTutorial": {
+      "text0": "To more easily fill out this form, you can copy and paste any of the items below. To start, click any of the items in the toolbar",
+      "text1": "Copied Item on Clipboard",
+      "text2": " The item you clicked on will remain highlighted in the toolbar and be copied to your clipboard.",
+      "text3": "Paste Into Field",
+      "text4": "Click into the matching form field and long press until you see the option to paste in the item!"
+    }
+  },
+  "redeemWashScreen": {
+    "dismissMsg": "Has the car wash station attendant seen your validation screen",
+    "redemptionCode": "Redemption Code",
+    "enjoyMsg1": "Enjoy your Full Service Car Wash",
+    "enjoyMsg2": "Enjoy Your Wash",
+    "showScreenToAttendant": "Show This Screen To The Station Attendant",
+    "cardCode": "Card Code",
+    "noWashAvailable": "No Washes Available",
+    "washAvailableToday": "Wash Available Today"
+  },
+  "pushNotification": {
+    "history": {
+      "title": "Push Notification History"
+    },
+    "savedForLater": {
+      "title": "Saved for Later"
+    }
+  },
+  "entitlementModal": {
+    "expires": "Expires",
+    "plan": "Plan",
+    "issue": "Issue Date",
+    "headText": "The following are your car wash membership plan details",
+    "footerText0": "Please click",
+    "footerText1": "or call Washub for any questions regarding your plan entitlements at",
+    "footerText2": "(877) 365-Wash (9274)"
+  }
+}

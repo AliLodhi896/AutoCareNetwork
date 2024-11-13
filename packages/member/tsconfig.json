@@ -1,0 +1,33 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react-native",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "plugins": [
+      { "name": "typescript-tslint-plugin" }
+    ]
+  },
+  "exclude": ["node_modules"],
+  "include": ["index.js", "app", "test", "storybook", "../shared/theme", "../shared/services/storage.ts", "../shared/utils/common.ts", "../shared/global-types", "../shared/contexts/services/api", "../shared/contexts/contexts", "../shared/components/gradient-background", "../shared/components/screen", "../shared/services/actions.ts", "../shared/components/custom-header", "../shared/components/auto-image", "../shared/components/circle-action-button", "../shared/storybook/views", "../shared/services/react-powerplug.tsx", "../shared/screens/message", "../shared/components/user-rating-modal", "../shared/screens/message", "../shared/services/intercom.service.ts"],
+  "paths": {
+    "@member/root/*": ["./packages/member/*"],
+    "@member/test/*": ["./packages/member/test/*"],
+    "@member/app/*": ["./packages/member/app/*"],
+    "@member/assets/*": ["./packages/member/assets/*"],
+    "@member/component/*": ["./packages/member/components/*"],
+    "@member/screens/*": ["./packages/member/app/screens/*"],
+  },
+}

@@ -1,0 +1,30 @@
+Device ID	Device Name
+640e88108cd3b76ff7d4884305988a9c6c391512	Mark Behar - iPhone 6	ios
+00008020-00093c2a3cd2002e	Jason Seid - iPhone XS	ios
+00008020-0018642122f9002e	Jason Seid - iPhone XR	ios
+00008020-001e502a11e1002e	Michael Wagner - iPhone XR	ios
+00008020-000d10a61e90003a	David Saunier - iPhone XS	ios
+00008020-001c50ce0e99002e	Tech Tech - iPhone XR	ios
+00008030-000664dc3431802e	Tech Tech - iPhone 11 Pro Max	ios
+640e88108cd3b76ff7d4884305988a9c6c391512	Tech Tech - iPhone 6	ios
+b9e86b251f2d85f93a23006f1a45570702a2d0cc	Phil Perlman - iPhone 7	ios
+00008030-000e40d83c28802e	dave lin - iPhone 11 Pro	ios
+00008020-00093c2a3cd2002e	Jason Seid - iPhone XS	ios
+00008020-0018642122f9002e	Jason Seid - iPhone XR	ios
+00008110-000819e4346a801e	Jonathan Webb - iPhone 13 Pro Max	ios
+00008030-00050cde34a3802e	Chris Reinhardt - iPhone 11 Pro	ios
+035f8c3de792b4ab94a7ac7c30dd412adfede620	Chris Reinhardt - iPad (5th gen)	ios
+9749717a130128adbffe969f1e34a09a16eab140	Chris Reinhardt - iPhone X	ios
+00008020-001e502a11e1002e	Michael Wagner - iPhone XR	ios
+00008120-000203ca1e93c01e	Garrett O'Shea - iPhone 14 Pro Max	ios
+00008020-001c1d302628002e	Michael Hablenko - iPhone XR	ios
+00008101-001075890251001e	Michael Hablenko - iPhone 12 Mini	ios
+00008101-00184d6c3ce0001e	Michael Hablenko - iPhone 12 Mini	ios
+00008020-001c50ce0e99002e	Tech Tech - iPhone XR	ios
+00008030-000664dc3431802e	Tech Tech - iPhone 11 Pro Max	ios
+640e88108cd3b76ff7d4884305988a9c6c391512	Tech Tech - iPhone 6	ios
+74578a89f65e46b938c45033c01136befcee5afe	John Ryan - iPhone 6s	ios
+b4caa56d75db14466bdf7ad449b4125aac869467	John Ryan - iPhone 6 Plus	ios
+00008020-001c1d302628002e	Michael Hablenko - iPhone XR	ios
+00008101-001075890251001e	Michael Hablenko - iPhone 12 Mini	ios
+00008101-00184d6c3ce0001e	Michael Hablenko - iPhone 12 Mini	ios

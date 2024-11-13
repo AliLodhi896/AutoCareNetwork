@@ -1,0 +1,128 @@
+fastlane_version '2.184.1'
+
+appcenter_secret = '263a40d556b0e9398e71660a53b4d83d13fb556a'
+
+before_all do
+  #ensure_git_status_clean
+  #git_pull
+  ENV['ENVFILE'] = '.env'
+end
+
+after_all do
+  clean_build_artifacts
+end
+
+platform :ios do
+  # iOS Lanes
+  workspace_path = './ios/WashubMember.xcworkspace'
+
+  desc 'Fetch certificates and provisioning profiles'
+  lane :certificates do |options|
+    target = options[:target]
+
+    app_id = if target == 'WashubMember'
+               'com.autocarenetwork.Autocare'
+             else
+               'com.autocarenetwork.dealerbundle'
+             end
+
+    match(app_identifier: app_id, type: 'adhoc', readonly: false)
+    ENV['PROFILE_UUID'] = lane_context[SharedValues::SIGH_UDID]
+  end
+
+  desc 'Build the iOS application.'
+  private_lane :build do |options|
+    target = options[:target]
+    certificates(options)
+    xcode_select('/Applications/Xcode.app')
+    gym(workspace: workspace_path, scheme: target, configuration: 'Release', export_method: 'ad-hoc')
+  end
+
+  desc 'Ship to App Center.'
+  lane :beta do
+    target = UI.select('Select target: ', ['WashubMember', 'Dealer Bundle'])
+    appcenter_fetch_devices(
+      api_token: appcenter_secret,
+      owner_name: 'Autocare-Network',
+      destinations: '*',
+      app_name: target == 'WashubMember' ? 'Autocare' : 'Dealer-Bundle-iOS'
+    )
+    build(target: target)
+    appcenter_upload(notify_testers: true)
+    clean_build_artifacts
+  end
+
+  lane :upload_symbols do
+    download_dsyms
+    upload_symbols_to_sentry(
+      auth_token: sentryToken,
+      org_slug: 'autocare',
+      project_slug: 'autocare-customer'
+    )
+  end
+
+  desc 'Upload to App Store'
+  lane :app_store_upload do |_options|
+    ensure_git_branch(
+      branch: 'master'
+    )
+    sync_code_signing(type: 'appstore')
+    target = UI.select('Select target: ', ['WashubMember', 'Dealer Bundle'])
+    build(target: target)
+    deliver
+    slack(
+      message: 'Successfully Uploaded New Build To App Store'
+    )
+  end
+end
+
+platform :android do
+  # Android Lanes
+  desc 'Build the Android application.'
+  lane :build_debug do
+    gradle(task: 'clean', project_dir: 'android/')
+    
+    find_replace_string(
+      path_to_file: './app/config/index.ts',
+      old_string: '= __DEV__',
+      new_string: '= true'
+    )
+    increment_version_code()
+    increment_version_name(gradle_file_path: './android/app/build.gradle')
+
+    sh("npm", "run", "build-android")
+    gradle(task: "assemble", flavor: 'anit', build_type: 'Debug', project_dir: 'android/')
+    
+    find_replace_string(
+      path_to_file: './app/config/index.ts',
+      old_string: '= true',
+      new_string: '= __DEV__'
+    )
+  end
+
+    desc "Build a custom variant APK"
+    lane :build_release do
+      gradle(
+        task: "assemble",
+        project_dir: 'android/',
+        build_type: "anitRelease",  # Adjust to match your build variant
+        properties: {
+          "ENVFILE" => ".env"
+        }
+      )
+    end
+  
+
+  desc 'Ship to App Center'
+  lane :ship_debug_appcenter do
+    build_debug
+    appcenter_upload(
+      api_token: appcenter_secret,
+      owner_name: 'Autocare-Network',
+      destinations: '*',
+      app_name: 'AutocareNetwork',
+      notify_testers: true,
+      release_notes: 'Rmoving MarkeingCloud senderID from init + disable Intercom'
+    )
+  end
+end

@@ -1,0 +1,299 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "saved": "Saved",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "daysAgo": "days ago",
+    "welcome": "Welcome",
+    "website": "Website",
+    "phone": "Phone",
+    "address": "Address",
+    "mile": "MILE",
+    "logout": "LOG OUT",
+    "unlink": "Unlink",
+    "text": "Text",
+    "email": "Email",
+    "call": "Call",
+    "welcomeBack": "Welcome Back",
+    "color": "Color",
+    "premiumService": "Premium Services",
+    "miles": "MILES",
+    "directions": "Directions",
+    "submit": "Submit",
+    "note": "Note",
+    "done": "Done",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success",
+    "available": "Available",
+    "wash": "Wash",
+    "washes": "Washes",
+    "none": "None",
+    "other": "Other",
+    "notes": "Notes",
+    "refresh": "Refresh",
+    "error": "Error",
+    "goodMorning": "Good morning",
+    "goodAfternoon": "Good afternoon",
+    "goodEvening": "Good evening"
+  },
+  "errors": {
+    "invalidEmail": "Invalid email address."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "custom": "Custom",
+    "date/time": "Date/Time",
+    "card": "Card #",
+    "dealership": "Dealership",
+    "vehicleImage": "Vehicle\nImage",
+    "startDate": "Select Start Date",
+    "endDate": "Select End Date",
+    "changeRequest": "Change Requested",
+    "noLicensePlate": "No License Plate",
+    "success": "Success",
+    "plateSuccessfullyChanged": "Your Plate Change Request has been sent successfully.",
+    "licensePlate": "License Plate",
+    "noDealer": "No Dealer",
+    "make": "Make",
+    "model": "Model",
+    "customerVehicleDetails": "Customer Vehicle Details"
+  },
+  "requestLicenseUpdate": {
+    "requestUpdate": "Request Update",
+    "yourName": "Enter your name",
+    "yourEmail": "Enter your email",
+    "licensePlateNumber": "Enter your license plate number",
+    "selectState": "Select State",
+    "title": "Request License Plate Update",
+    "description": "Enter the correct license plate on the customer's Washub card"
+  },
+  "signupScreen": {
+    "registerMembership": "Register Membership",
+    "register": "REGISTER",
+    "save": "Save",
+    "exteriorOnly": "Exterior Only",
+    "zepRep": "Zep Rep",
+    "fullService": "Full Service",
+    "stationName": "Station Name",
+    "stationAddress": "Station Address",
+    "stationState": "Station State",
+    "stationCity": "Station City",
+    "stationZip": "Station ZipCode",
+    "stationPhone": "Station Phone Number",
+    "stationOwnerFirstName": "Station Owner First Name",
+    "stationOwnerLastName": "Station Owner Last Name",
+    "stationOwnerEmail": "Station Owner Email",
+    "confirmStationOwnerEmail": "Confirm Station Owner Email",
+    "stationOwnerMobilePhone": "Station Owner Mobile Phone",
+    "stationCWManager": "Station CW Manager",
+    "stationServiceLevel": "Station Service Level",
+    "stationFullServiceWashPrice": "Full Service Wash Price",
+    "stationExteriorOnlyWashPrice": "Exterior Only Wash Price",
+    "registrationHelp": "Registration Help",
+    "getHelp": "GET HELP",
+    "getHelpDetail_0": "For help registering your membership,",
+    "getHelpDetail_1": "please call Washub",
+    "call_washub": "Call Washub",
+    "text_washub": "Text Washub",
+    "validations": {
+      "stationName": {
+        "required": "The station name is required"
+      },
+      "stationAddress": {
+        "required": "The station address is required"
+      },
+      "stationState": {
+        "required": "The station state is required"
+      },
+      "stationCity": {
+        "required": "The station city is required"
+      },
+      "stationZip": {
+        "required": "The station zipCode is required"
+      },
+      "stationPhone": {
+        "required": "The station station phone number is required",
+        "length": "Phone number must be 10 digits in length"
+      },
+      "stationOwnerFirstName": {
+        "required": "The station owner firstname is required"
+      },
+      "stationOwnerLastName": {
+        "required": "The station owner lastName is required"
+      },
+      "stationOwnerEmail": {
+        "required": "The station owner email is required",
+        "email": "This must be a valid email",
+        "equal": "Email addresses must match"
+      },
+      "stationOwnerMobilePhone": {
+        "required": "The owner phone number field is required",
+        "validUsPhoneNumber": "Please enter a valid US phone number",
+        "length": "Phone number must be 10 digits in length"
+      },
+      "stationCWManager": {
+        "required": "The station manager name is required"
+      },
+      "stationServiceLevel": {
+        "required": "The station service level is required"
+      },
+      "stationFullServiceWashPrice": {
+        "required": "The station full service wash price is required"
+      },
+      "stationExteriorOnlyWashPrice": {
+        "required": "The station exterior only wash price is required"
+      },
+      "stationServicesPricing": {
+        "required": "Please enter a price for each service"
+      },
+      "zepId": {
+        "required": "The zep id is required"
+      }
+    }
+  },
+  "loginScreen": {
+    "login": "LOG IN",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "registerMyMembership": "REGISTER MY MEMBERSHIP",
+    "googleLogintext": "Alternatively, sign in with google",
+    "resetPassword": "Reset password",
+    "contactWashub": "Contact Washub",
+    "emailWashub": "Email Washub",
+    "supportMessage": "Washub Support Request",
+    "validations": {
+      "emailAddress": {
+        "required": "The email is required",
+        "email": "This must be a valid email"
+      },
+      "password": {
+        "required": "The password field is required"
+      }
+    }
+  },
+  "storybook": {
+    "placeholder": "Placeholder",
+    "field": "Field"
+  },
+  "errorScreen": {
+    "title": "Something went wrong!",
+    "friendlySubtitle": "The app has crash un expectedly",
+    "traceTitle": "Error from %{name} stack",
+    "reset": "RESET APP"
+  },
+  "passwordChangeScreen": {
+    "title": "Password Change Required",
+    "password": "Password",
+    "passwordChangeNeeded": "Your account requires a password change",
+    "confirmPassword": "Confirm Password",
+    "validations": {
+      "confirmPassword": {
+        "required": "Please confirm your password",
+        "equal": "Passwords do not match!"
+      },
+      "password": {
+        "required": "The password field is required"
+      }
+    }
+  },
+  "editStationScreen": {
+    "title": "Edit Station",
+    "editStationSuccess": "Your station update request has been submitted to Washub. When it is approved you will be notified via email.",
+    "createStationSuccess": "Your request has been submitted to Washub. When your station is approved you will receive login credentials via email."
+  },
+  "homeScreen": {
+    "editStation": "Edit Station",
+    "settings": "Settings",
+    "validateWash": "Validate Wash",
+    "contactWashub": "Contact Washub",
+    "recentWashes": "Recent Washes",
+    "shareApp": "Share This App",
+    "submitW9": "Submit W-9 Form",
+    "w9": "W-9",
+    "rating": {
+      "rateApp": "Rate App",
+      "rateCashierExperience": "Rate Cashier Experience",
+      "ratewash": "Rate Wash",
+      "inputPlaceholder": "Enter Feedback",
+      "ratingMessageSubject": "Washub Merchant Feedback",
+      "ratingMessageBody": "App Rating"
+    },
+    "stationId": "Station ID",
+    "todayIs": "Today is",
+    "hasSubmittedW9_0": "If you have submitted a W-9 form, please wait for an Washub Admin to review and approve it",
+    "hasSubmittedW9_1": "Please submit your W-9 form below to activate your station",
+    "noActiveStation": "There are no active stations that you can access at this time.",
+    "submitW9ToActivate": "Submit your W-9 form to activate your station",
+    "share": {
+      "merchant_by_washub": "Merchant by Washub!",
+      "download_message": "Download the Washub Merchant App",
+      "try_app_message": "Try the Washub Merchant app by Washub!"
+    },
+    "alert": {
+      "submitted": "Submitted",
+      "submitted_message1": "Once your W-9 is successfully submitted Washub will review it. Once it's approved you'll be able to redeem washes",
+      "submitted_message2": "If you have successfully completed and submitted a W-9 form for your car wash, please wait until the form is reviewed by an Washub Admin and approved so you can begin redeeming washes.",
+      "submitted_message3": "Please click this button to submit your W-9 form. Once received, a Washub Admin will review the form. When approved, your station will become active!",
+      "submitted_message4": "Your station is ready to begin accepting washes"
+    }
+  },
+  "settingsScreen": {
+    "items": {
+      "editStation": "Edit Station",
+      "pushNotifications": "Push Notifications",
+      "taxInfo": "Tax Information",
+      "sendCustomerApp": "Send Customer App",
+      "aboutAutocare": "About Washub"
+    },
+    "debug": "DEBUG",
+    "production": "PRODUCTION",
+    "version": "Version {{version}} installed",
+    "share": {
+      "title": "Try the ANIT app!",
+      "message": "Anit by Washub Network! {{url}}",
+      "subject": "Try the ANIT app!"
+    }
+  },
+  "pushNotificationsScreen": {
+    "pushNotifications": "Push Notifications"
+  },
+  "taxInfoScreen": {
+    "taxInformation": "Tax Information",
+    "SUBMIT_W9": "Submit W9",
+    "viewW9": "View W9",
+    "hasSubmittedW9": "If you have successfully completed and submitted a W-9 form for your car wash, please wait until the form is reviewed by a Washub Admin and approved so you can begin redeeming washes.",
+    "unableToLoadW9": "Unable to download W9"
+  },
+  "validateWashScreen": {
+    "validateWash": "Validate Wash",
+    "lineUpCodeBelow": "LINE UP CODE BELOW",
+    "enterCodeManually": "Enter code manually",
+    "approved": "Approved",
+    "licencePlateNumber": "Licence Plate Number",
+    "denied": "Denied",
+    "returnToMain": "Return to main",
+    "contactAutocare": "Contact washub",
+    "cameraAccessDenied": "Camera Access Denied\nGo to Settings -> ACN Merchant to enable access",
+    "errorValidatingWash": "Error validating wash",
+    "enterCardCode": "Enter card code",
+    "enterCardCodeDetails": "Enter the card code on the customer's Washub card",
+    "backToHome": "Back to home",
+    "contactWashub": "Contact Washub",
+    "validations": {
+      "cardCode": {
+        "required": "The card code is required",
+        "length": "Card code number must be 9 digits in length"
+      }
+    }
+  }
+}
